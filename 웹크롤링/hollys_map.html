@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_aac855a8110abbdcbec59f93b94bfe1c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_aac855a8110abbdcbec59f93b94bfe1c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_aac855a8110abbdcbec59f93b94bfe1c = L.map(
+                "map_aac855a8110abbdcbec59f93b94bfe1c",
+                {
+                    center: [36.43217621655318, 127.3712957875024],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b5dea1e3a71fb035d8ecf0f0b0bd0b02 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_b5dea1e3a71fb035d8ecf0f0b0bd0b02.addTo(map_aac855a8110abbdcbec59f93b94bfe1c);
+        
+    
+            var marker_cluster_1797611db7acbd2e7ca08e03aa799e28 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_58af4e9a64fc85d8b9451dee67c282cd = L.marker(
+                [37.4995614234716, 126.927153186125],
+                {
+}
+            ).addTo(marker_cluster_1797611db7acbd2e7ca08e03aa799e28);
+        
+    
+            var icon_146fee768575f3f715f76fec641876db = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_88708b0bdbd87923791988eb0e7a7307 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b1a935ec42166eb0fc4a9e4223a74976 = $(`<div id="html_b1a935ec42166eb0fc4a9e4223a74976" style="width: 100.0%; height: 100.0%;">신대방삼거리역점<br>서울특별시 동작구 상도로 60 (대방동) 1층~2층</div>`)[0];
+                popup_88708b0bdbd87923791988eb0e7a7307.setContent(html_b1a935ec42166eb0fc4a9e4223a74976);
+            
+        
+
+        marker_58af4e9a64fc85d8b9451dee67c282cd.bindPopup(popup_88708b0bdbd87923791988eb0e7a7307)
+        ;
+
+        
+    
+    
+                marker_58af4e9a64fc85d8b9451dee67c282cd.setIcon(icon_146fee768575f3f715f76fec641876db);
+            
+    
+            var marker_2457293d62d6a8a9a2f95ca72316f513 = L.marker(
+                [35.961406370385, 126.989041167117],
+                {
+}
+            ).addTo(marker_cluster_1797611db7acbd2e7ca08e03aa799e28);
+        
+    
+            var icon_fca687adf0b6bba348ae834ee81d123a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_95ba43b871d97ec19a47cc05ea2f1b44 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d9667947b457cfcd8d1689afdcadfe2f = $(`<div id="html_d9667947b457cfcd8d1689afdcadfe2f" style="width: 100.0%; height: 100.0%;">익산부송점<br>전라북도 익산시 하나로10길 70-1 (부송동, 레스트빌딩 1층) .</div>`)[0];
+                popup_95ba43b871d97ec19a47cc05ea2f1b44.setContent(html_d9667947b457cfcd8d1689afdcadfe2f);
+            
+        
+
+        marker_2457293d62d6a8a9a2f95ca72316f513.bindPopup(popup_95ba43b871d97ec19a47cc05ea2f1b44)
+        ;
+
+        
+    
+    
+                marker_2457293d62d6a8a9a2f95ca72316f513.setIcon(icon_fca687adf0b6bba348ae834ee81d123a);
+            
+    
+            var marker_61f6d2b7d9f2221a7938995e2f544b7e = L.marker(
+                [37.5223003029771, 126.926225192863],
+                {
+}
+            ).addTo(marker_cluster_1797611db7acbd2e7ca08e03aa799e28);
+        
+    
+            var icon_3992e65f8997470b685097ab49dfae36 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c0d7eef88aaf746b361974c52b6ca3f2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b863172db178c5f01cca3521a9821590 = $(`<div id="html_b863172db178c5f01cca3521a9821590" style="width: 100.0%; height: 100.0%;">여의도포스트타워점<br>서울특별시 영등포구 여의나루로 60 포스트타워 여의도 1층</div>`)[0];
+                popup_c0d7eef88aaf746b361974c52b6ca3f2.setContent(html_b863172db178c5f01cca3521a9821590);
+            
+        
+
+        marker_61f6d2b7d9f2221a7938995e2f544b7e.bindPopup(popup_c0d7eef88aaf746b361974c52b6ca3f2)
+        ;
+
+        
+    
+    
+                marker_61f6d2b7d9f2221a7938995e2f544b7e.setIcon(icon_3992e65f8997470b685097ab49dfae36);
+            
+    
+            var marker_80e218bfb7c649fd9d99a6308467a955 = L.marker(
+                [37.4930241705718, 126.897628371815],
+                {
+}
+            ).addTo(marker_cluster_1797611db7acbd2e7ca08e03aa799e28);
+        
+    
+            var icon_bb859429a05c302bf672c31b0de01c69 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_47c94edebdd4798375dc4722546dbea7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_246d4b53ac9d12483a6c623f54a7c86d = $(`<div id="html_246d4b53ac9d12483a6c623f54a7c86d" style="width: 100.0%; height: 100.0%;">대림역점<br>서울특별시 영등포구 도림로 140 대림빌딩 101호</div>`)[0];
+                popup_47c94edebdd4798375dc4722546dbea7.setContent(html_246d4b53ac9d12483a6c623f54a7c86d);
+            
+        
+
+        marker_80e218bfb7c649fd9d99a6308467a955.bindPopup(popup_47c94edebdd4798375dc4722546dbea7)
+        ;
+
+        
+    
+    
+                marker_80e218bfb7c649fd9d99a6308467a955.setIcon(icon_bb859429a05c302bf672c31b0de01c69);
+            
+    
+            var marker_5d2735bc7e2feed640526b18f07abf6a = L.marker(
+                [35.2189848849705, 129.07991341737],
+                {
+}
+            ).addTo(marker_cluster_1797611db7acbd2e7ca08e03aa799e28);
+        
+    
+            var icon_8de0c9b4821b297a29d183618fe77946 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cd49034276b14b8c2093d1bee76df7d4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9bfbc322c4f0682b5159e72d5c6c1222 = $(`<div id="html_9bfbc322c4f0682b5159e72d5c6c1222" style="width: 100.0%; height: 100.0%;">부산동래온천점<br>부산광역시 동래구 금강로 116 (온천동) 금강메디컬타워 1층</div>`)[0];
+                popup_cd49034276b14b8c2093d1bee76df7d4.setContent(html_9bfbc322c4f0682b5159e72d5c6c1222);
+            
+        
+
+        marker_5d2735bc7e2feed640526b18f07abf6a.bindPopup(popup_cd49034276b14b8c2093d1bee76df7d4)
+        ;
+
+        
+    
+    
+                marker_5d2735bc7e2feed640526b18f07abf6a.setIcon(icon_8de0c9b4821b297a29d183618fe77946);
+            
+    
+            var marker_9f7093a3e057d18895255927beeaa319 = L.marker(
+                [37.5610226183, 126.962192415514],
+                {
+}
+            ).addTo(marker_cluster_1797611db7acbd2e7ca08e03aa799e28);
+        
+    
+            var icon_361fabff83797bbd7406da696eeb5aac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fdec6e900691b3cecc473d7c1c09446e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a1d457827ab952fc8e0ac4cf6f7593d3 = $(`<div id="html_a1d457827ab952fc8e0ac4cf6f7593d3" style="width: 100.0%; height: 100.0%;">충정로역점<br>서울특별시 서대문구 경기대로 26-26 어바니엘충정로 201동 지하1층 102호</div>`)[0];
+                popup_fdec6e900691b3cecc473d7c1c09446e.setContent(html_a1d457827ab952fc8e0ac4cf6f7593d3);
+            
+        
+
+        marker_9f7093a3e057d18895255927beeaa319.bindPopup(popup_fdec6e900691b3cecc473d7c1c09446e)
+        ;
+
+        
+    
+    
+                marker_9f7093a3e057d18895255927beeaa319.setIcon(icon_361fabff83797bbd7406da696eeb5aac);
+            
+    
+            var marker_6b3295c1a46d2f20cf7fd2959550a15b = L.marker(
+                [35.0810780661749, 129.014512799533],
+                {
+}
+            ).addTo(marker_cluster_1797611db7acbd2e7ca08e03aa799e28);
+        
+    
+            var icon_92428331abc8d6fe423f0d5df872f1e0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_053113a622bc56be38fd31e3bc7bc52b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e8db93c6eeb6eff90029a2333ffc8a60 = $(`<div id="html_e8db93c6eeb6eff90029a2333ffc8a60" style="width: 100.0%; height: 100.0%;">부산고신대의과대학점<br>부산광역시 서구 감천로 262 고신의대 강의동 1층</div>`)[0];
+                popup_053113a622bc56be38fd31e3bc7bc52b.setContent(html_e8db93c6eeb6eff90029a2333ffc8a60);
+            
+        
+
+        marker_6b3295c1a46d2f20cf7fd2959550a15b.bindPopup(popup_053113a622bc56be38fd31e3bc7bc52b)
+        ;
+
+        
+    
+    
+                marker_6b3295c1a46d2f20cf7fd2959550a15b.setIcon(icon_92428331abc8d6fe423f0d5df872f1e0);
+            
+    
+            var marker_07d1dc9ed77bb2ecffcdbfe1793f9012 = L.marker(
+                [35.1567141271262, 128.098001405271],
+                {
+}
+            ).addTo(marker_cluster_1797611db7acbd2e7ca08e03aa799e28);
+        
+    
+            var icon_52f7ee0750862a72769ce027f4739638 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_455ed0a9297592c8971ddcc55d0c0151 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_52ad5b933cb2dfae4057397bc0f20154 = $(`<div id="html_52ad5b933cb2dfae4057397bc0f20154" style="width: 100.0%; height: 100.0%;">경상국립대학생회관점<br>경상남도 진주시 진주대로 501 경상국립대 학생회관 1층</div>`)[0];
+                popup_455ed0a9297592c8971ddcc55d0c0151.setContent(html_52ad5b933cb2dfae4057397bc0f20154);
+            
+        
+
+        marker_07d1dc9ed77bb2ecffcdbfe1793f9012.bindPopup(popup_455ed0a9297592c8971ddcc55d0c0151)
+        ;
+
+        
+    
+    
+                marker_07d1dc9ed77bb2ecffcdbfe1793f9012.setIcon(icon_52f7ee0750862a72769ce027f4739638);
+            
+    
+            var marker_cc7d346a86a166a6e64e8103fce18bb4 = L.marker(
+                [37.5291587223783, 126.831707115465],
+                {
+}
+            ).addTo(marker_cluster_1797611db7acbd2e7ca08e03aa799e28);
+        
+    
+            var icon_971354ed3cc5250ffdb597aeb332dcbd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ae97610ff93fd2036ed871b3e9e9a163 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_493c217d8be74540d8934cd089338213 = $(`<div id="html_493c217d8be74540d8934cd089338213" style="width: 100.0%; height: 100.0%;">서서울공원점<br>서울특별시 양천구 남부순환로58길 37 신월동 205-36</div>`)[0];
+                popup_ae97610ff93fd2036ed871b3e9e9a163.setContent(html_493c217d8be74540d8934cd089338213);
+            
+        
+
+        marker_cc7d346a86a166a6e64e8103fce18bb4.bindPopup(popup_ae97610ff93fd2036ed871b3e9e9a163)
+        ;
+
+        
+    
+    
+                marker_cc7d346a86a166a6e64e8103fce18bb4.setIcon(icon_971354ed3cc5250ffdb597aeb332dcbd);
+            
+    
+            var marker_c8e507536452fc945bf32fc02627b4d4 = L.marker(
+                [36.5011321800617, 127.258850981903],
+                {
+}
+            ).addTo(marker_cluster_1797611db7acbd2e7ca08e03aa799e28);
+        
+    
+            var icon_1ca8dc0b522756b0b6264a34a62138a1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3829c8b43e88882c6f639a7eb69bd76a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5581f1bea485b267fe4fe17915cbca61 = $(`<div id="html_5581f1bea485b267fe4fe17915cbca61" style="width: 100.0%; height: 100.0%;">AK&세종점<br>세종특별자치시 한누리대로 411 KT&G 세종타워A</div>`)[0];
+                popup_3829c8b43e88882c6f639a7eb69bd76a.setContent(html_5581f1bea485b267fe4fe17915cbca61);
+            
+        
+
+        marker_c8e507536452fc945bf32fc02627b4d4.bindPopup(popup_3829c8b43e88882c6f639a7eb69bd76a)
+        ;
+
+        
+    
+    
+                marker_c8e507536452fc945bf32fc02627b4d4.setIcon(icon_1ca8dc0b522756b0b6264a34a62138a1);
+            
+    
+            var marker_d6225ea9ddae52285c7fec5cea4f8f89 = L.marker(
+                [35.8411382714422, 127.131588969832],
+                {
+}
+            ).addTo(marker_cluster_1797611db7acbd2e7ca08e03aa799e28);
+        
+    
+            var icon_123a8ab90a3bed15047e26c1b9352789 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dff12a195a203a31f16a9d41a2493063 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_145ba63cf19e20534b810518b18336b2 = $(`<div id="html_145ba63cf19e20534b810518b18336b2" style="width: 100.0%; height: 100.0%;">전북대 후생관점<br>전북특별자치도 전주시 덕진구 백제대로 567 후생관 1층</div>`)[0];
+                popup_dff12a195a203a31f16a9d41a2493063.setContent(html_145ba63cf19e20534b810518b18336b2);
+            
+        
+
+        marker_d6225ea9ddae52285c7fec5cea4f8f89.bindPopup(popup_dff12a195a203a31f16a9d41a2493063)
+        ;
+
+        
+    
+    
+                marker_d6225ea9ddae52285c7fec5cea4f8f89.setIcon(icon_123a8ab90a3bed15047e26c1b9352789);
+            
+    
+            var marker_142626fb31ef3c89d70b0782f5c9b29a = L.marker(
+                [35.8411382714422, 127.131588969832],
+                {
+}
+            ).addTo(marker_cluster_1797611db7acbd2e7ca08e03aa799e28);
+        
+    
+            var icon_a2da1a0249b331103e104cbd69c11ef9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9a228749289d6b019f3db846f6511da9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d8109d67be31be2c17f925a439ff0af2 = $(`<div id="html_d8109d67be31be2c17f925a439ff0af2" style="width: 100.0%; height: 100.0%;">전북대 진수당점<br>전북 전주시 덕진구 백제대로 567 (전북대 진수당 연구동 1층) .</div>`)[0];
+                popup_9a228749289d6b019f3db846f6511da9.setContent(html_d8109d67be31be2c17f925a439ff0af2);
+            
+        
+
+        marker_142626fb31ef3c89d70b0782f5c9b29a.bindPopup(popup_9a228749289d6b019f3db846f6511da9)
+        ;
+
+        
+    
+    
+                marker_142626fb31ef3c89d70b0782f5c9b29a.setIcon(icon_a2da1a0249b331103e104cbd69c11ef9);
+            
+    
+            var marker_1ed9dcf7ada399e7af523fb616370e09 = L.marker(
+                [35.8411382714422, 127.131588969832],
+                {
+}
+            ).addTo(marker_cluster_1797611db7acbd2e7ca08e03aa799e28);
+        
+    
+            var icon_0d31399f98ca54da1ea637c1699f2cf6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6bfdc86247dbce6b9114d2a5e2724088 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ada9df3a1570639f4c3efbed7e37fd8a = $(`<div id="html_ada9df3a1570639f4c3efbed7e37fd8a" style="width: 100.0%; height: 100.0%;">전북대 중도라운지점<br>전북 전주시 덕진구 백제대로 567 중앙도서관 1층</div>`)[0];
+                popup_6bfdc86247dbce6b9114d2a5e2724088.setContent(html_ada9df3a1570639f4c3efbed7e37fd8a);
+            
+        
+
+        marker_1ed9dcf7ada399e7af523fb616370e09.bindPopup(popup_6bfdc86247dbce6b9114d2a5e2724088)
+        ;
+
+        
+    
+    
+                marker_1ed9dcf7ada399e7af523fb616370e09.setIcon(icon_0d31399f98ca54da1ea637c1699f2cf6);
+            
+    
+            var marker_8b37faae2f74b07b5e9adf4f4261c7d3 = L.marker(
+                [37.5939491407769, 127.054890960564],
+                {
+}
+            ).addTo(marker_cluster_1797611db7acbd2e7ca08e03aa799e28);
+        
+    
+            var icon_8e82d98166924986289b8d3ab4dbd3dc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f0f35f3786c0703c74ee93fccd768b76 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a0af0fbb531bacbed71396b5b09f0326 = $(`<div id="html_a0af0fbb531bacbed71396b5b09f0326" style="width: 100.0%; height: 100.0%;">경희대 청운관점<br>서울 동대문구 경희대로 26 청운관 지하1층</div>`)[0];
+                popup_f0f35f3786c0703c74ee93fccd768b76.setContent(html_a0af0fbb531bacbed71396b5b09f0326);
+            
+        
+
+        marker_8b37faae2f74b07b5e9adf4f4261c7d3.bindPopup(popup_f0f35f3786c0703c74ee93fccd768b76)
+        ;
+
+        
+    
+    
+                marker_8b37faae2f74b07b5e9adf4f4261c7d3.setIcon(icon_8e82d98166924986289b8d3ab4dbd3dc);
+            
+    
+            var marker_38ee3b3dff17cfe40beb89c1247408e2 = L.marker(
+                [35.8408964267771, 127.1345528895],
+                {
+}
+            ).addTo(marker_cluster_1797611db7acbd2e7ca08e03aa799e28);
+        
+    
+            var icon_fd59b5ba1c607b17a05e82dfdd35f301 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "coffee",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9cadce013f0a0503b4f3745b55098c3f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_21f094e3bc9064912cbeb50696be770e = $(`<div id="html_21f094e3bc9064912cbeb50696be770e" style="width: 100.0%; height: 100.0%;">전주백제대로점<br>전라북도 전주시 덕진구 백제대로 592 (금암동) 1층</div>`)[0];
+                popup_9cadce013f0a0503b4f3745b55098c3f.setContent(html_21f094e3bc9064912cbeb50696be770e);
+            
+        
+
+        marker_38ee3b3dff17cfe40beb89c1247408e2.bindPopup(popup_9cadce013f0a0503b4f3745b55098c3f)
+        ;
+
+        
+    
+    
+                marker_38ee3b3dff17cfe40beb89c1247408e2.setIcon(icon_fd59b5ba1c607b17a05e82dfdd35f301);
+            
+    
+            marker_cluster_1797611db7acbd2e7ca08e03aa799e28.addTo(map_aac855a8110abbdcbec59f93b94bfe1c);
+        
+</script>
+</html>
